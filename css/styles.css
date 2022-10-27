@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Calculator';
+  src: url("../dafont/Calculator.ttf");
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+img{
+  width:300px !important;
+  height: auto;
+}
+/* ------------------Nagivation Bar------------------ */
+.navbar {
+  padding: 1rem 2rem;
+}
+
+#nav-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+/*------------------ Title Section----------------*/
+
+.background-offwhite{              /* Background Color*/
+  background-color: #FEF9EF;
+}
+
+.big-heading-black {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.main-title {
+  padding: 1rem 5rem;
+  text-align: center;
+}
+.begin-btn, .next-btn{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  background-color: #ccc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.begin-btn span, .next-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.begin-btn span:after, .next-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.begin-btn:hover span, .next-btn:hover span {
+  padding-right: 25px;
+}
+
+.begin-btn:hover span:after, .next-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* ----------------Bill Section---------------- */
+.background-blue{              /* Background Color*/
+  background-color: #495664;
+}
+.bill-question{
+  text-align: center;
+  padding: 5%;
+}
+
+.big-heading-white{
+  font-size: 8rem;
+  line-height: 1;
+  color: #fff;
+}
+.form-label{
+  color: white;
+}
+/*-------------- Service Question------------ */
+
+.background-mintgreen{            /* Background Color*/
+  background-color:#F6F7D3;
+  text-align: center;
+}
+.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: #9EC429 !important;
+  border-color: #9EC429 !important;
+}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+  background-color: #8B92DB !important;
+  border-color: #8B92DB !important;
+}
+.rate-box{
+  margin-top: 2rem;
+}
+.rate-box:hover{
+  color: #dbad67;
+}
+.survey-btn{
+  margin: 2.5rem 0;
+}
+.text-secondary{
+  font-size: 18px;
+}
+
+.service-question .btn{
+  bottom:0;
+}
+/* -------------------Receipt seciton----------------- */
+.receipt-paper{
+  height: 600px;
+  width: 300px;
+  padding: 100px 20px 0 20px;
+  background-color: white;
+  margin: 5% 0;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 40px auto auto;
+
+
+}
+.grid-item {
+  text-align: left;
+  font-weight: bold;
+}
+/* --------------------Footer Section-------------------*/
