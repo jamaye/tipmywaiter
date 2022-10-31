@@ -38,7 +38,11 @@ for (let i = 0; i < 4; i++){
 //Rounds-up the bill
 document.getElementsByClassName("btn-roundup")[0].addEventListener("click", function(){
   var text = document.getElementById("new-bill-amount");
-  text.innerHTML = Math.ceil(billWithTip);
+  var tipText = document.getElementById("tip");
+  var roundUp = Math.ceil(billWithTip);
+  var roundUpTip = (parseFloat(roundUp) - parseFloat(bill)).toFixed(2);
+  text.innerHTML = roundUp;
+  tipText.innerHTML = roundUpTip;
 });
 
 //Function that sets inputValid that checks if bill is entered correctly
