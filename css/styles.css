@@ -36,21 +36,19 @@ img{
 
 .background-offwhite{              /* Background Color*/
   background-color: #FEF9EF;
+  min-height: 100%;
+  min-height: 100vh;
   /* background-image: url("../images/logo2.png");
   background-repeat: no-repeat;
   background-position: center; */
 }
 
 .big-heading-black {
-  font-size: 8rem;
+  font-size:10rem;
   line-height: 1;
 }
 
-.main-title {
-  padding: 1rem 5rem;
-  text-align: center;
-}
-.begin-btn, .next-btn{
+/* .begin-btn, .next-btn{
   font-family: 'Montserrat', sans-serif;
   border-radius: 4px;
   background-color: #ccc;
@@ -88,13 +86,26 @@ img{
 .begin-btn:hover span:after, .next-btn:hover span:after {
   opacity: 1;
   right: 0;
+} */
+.main-title{
+  text-align: center;
 }
-
 .vertical-center {
   min-height: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+@media (max-width:992px){
+  .big-heading-black {
+    font-size: 9rem;
+  }
+  .begin-btn button{
+    height:80%;
+    width:35%;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
 }
 /* ----------------Bill Section---------------- */
 .numberInput{
@@ -119,11 +130,30 @@ img{
 .form-label{
   color: white;
 }
+@media (max-width:992px){
+  .next-btn button{
+    height:80%;
+    width:35%;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .form-outline{
+    font-size: 36px;
+  }
+  .input-box{
+    font-size: 36px;
+    margin-top: 3rem;
+  }
+
+}
 /*-------------- Service Question------------ */
 
 .background-mintgreen{            /* Background Color*/
   background-color:#F6F7D3;
   text-align: center;
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
 }
 .btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
   background-color: #9EC429 !important;
@@ -143,12 +173,18 @@ img{
 .survey-btn{
   margin: 2.5rem 0;
 }
-.text-secondary{
-  font-size: 18px;
-}
 
-.service-question .btn{
-  bottom:0;
+.rate-descrip{
+  font-size: 24px;
+}
+@media (max-width:992px){
+  #rate-btn button{
+    width: 50%;
+    font-size: 2rem;
+  }
+  .service-question p{
+    font-size: 2rem;
+  }
 }
 /* -------------------Receipt seciton----------------- */
 .receipt-paper{
@@ -162,11 +198,34 @@ img{
 .grid-container {
   display: grid;
   grid-template-columns: 40px auto auto;
-
-
 }
 .grid-item {
   text-align: left;
   font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (max-width:992px){
+  .btn-roundup{
+    margin-top: 2rem;
+    width: 50%;
+    font-size: 2rem;
+  }
+}
+@media (max-width:992px){
+  .receipt-paper{
+    height: 1000px;
+    width: 600px;
+    padding: 100px 20px 0 30px;
+    background-color: white;
+    margin: 5% 0;
+    box-shadow: 5px 5px 5px 5px gray;
+    font-size: 34px;
+  }
+    .receipt-paper h3{
+      font-size: 4rem;
+    }
+    .grid-item{
+      font-size: 2.5rem;
+    }
 }
 /* --------------------Footer Section-------------------*/

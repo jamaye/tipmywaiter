@@ -23,9 +23,9 @@ document.querySelector(".next-btn").addEventListener("click", function(){
 });
 
 //Adds action listener to all buttons in Rate section
-for (let i = 0; i < 4; i++){
+for (let i = 0; i <4; i++){
   document.querySelectorAll("#rate-btn")[i].addEventListener("click", function(){
-    tipPercent = document.querySelectorAll(".btn")[i].value;
+    tipPercent = document.querySelectorAll(".btn")[i+2].value;
     if(checkValid()){
       this.href="#receipt";
       addReceiptValue(inputValid)

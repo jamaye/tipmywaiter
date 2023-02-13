@@ -41,14 +41,20 @@
 
   <!-- Title Page-->
   <section class="background-offwhite">
-    <div class="container vertical-center justify-content-center ">
-      <div class="row main-title justify-content-center">
-        <img src="images/logo2.png" alt="tmw-logo2.png">
+    <div class="container vertical-center" style="text-align: center">
+      <div class="row ">
         <h1 class="big-heading-black">TIP MY WAITER</h1>
-        <a class="begin-btn" href="#bill"><span>Begin </span></a>
+        <a class="begin-btn" href="#bill"><button type="button" class="btn btn-dark">Begin</button></a>
       </div>
     </div>
   </section>
+<!--
+  <section class="background-offwhite">
+    <div class="container vertical-center">
+        <h1 class="big-heading-black">TIP MY WAITER</h1>
+        <a href="#bill"><button type="button" class="btn btn-dark">Begin</button></a>
+    </div>
+  </section> -->
 
   <!-- Bill Section -->
   <section class="background-blue" id="bill">
@@ -56,10 +62,10 @@
       <div class="row bill-question justify-content-center">
         <h1 class="big-heading-white"> How much was the bill?</h1>
         <div class="form-outline">
-          <input type="number" id="typeNumber" class="numberInput" /><br>
+          <input type="number" id="typeNumber" class="form-control input-box" />
           <label class="form-label" for="typeNumber">Enter Amount</label>
         </div>
-        <a class="next-btn" id="next"><span>Next </span></a> <!-- href used to be here for section-->
+        <a class="next-btn" id="next"><button type="button" class="btn btn-dark">Next</button></a> <!-- href used to be here for section-->
       </div>
     </div>
   </section>
@@ -68,7 +74,8 @@
   <section class="background-mintgreen" id="service">
     <div class="container service-question vertical-center">
       <div class="row">
-        <h1 class="big-heading-black">Rate Your Experience</h1>
+        <h1 class="big-heading-black">Rate the Service</h1>  <!--BIG HEADING BLACK -->
+
         <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-meh-blank fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was ... ok?"</em></p>
@@ -96,7 +103,7 @@
   <!-- Receipt Section -->
   <section class="background-offwhite" id="receipt">
     <div class="container vertical-center">
-      <div class="row " align="center">
+      <div class="row" align="center">
       <div class="col-lg-6">
         <h1 class="big-heading-black">Your Receipt</h1>
         <button type="button" class="btn btn-outline-dark btn-roundup">Round-up Bill</button>
@@ -120,7 +127,7 @@
             <div class="grid-item">Tip:</div>
             <div class="grid-item"><p id="tip">tip-amount</p></div>
             <div class="grid-item"></div>
-            <div class="grid-item">Total Bill:</div>
+            <div class="grid-item">Total:</div>
             <div class="grid-item"><p id="new-bill-amount">new-bill-amount</p></div>
           </div>
         </div>
