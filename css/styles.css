@@ -87,6 +87,16 @@ img{
   opacity: 1;
   right: 0;
 } */
+
+
+.begin-btn{
+  padding-top:2rem;
+}
+.begin-btn .btn-dark, .next-btn .btn-dark{
+  height:100%;
+  width: 30%;
+  font-size:2.5rem;
+}
 .main-title{
   text-align: center;
 }
@@ -129,6 +139,11 @@ img{
 }
 .form-label{
   color: white;
+  font-size:2rem;
+}
+.form-control{
+  margin-top:2rem;
+  font-size: 3rem;
 }
 @media (max-width:992px){
   .next-btn button{
@@ -166,6 +181,7 @@ img{
 }
 .rate-box{
   margin-top: 2rem;
+  
 }
 .rate-box:hover{
   color: #dbad67;
@@ -177,6 +193,13 @@ img{
 .rate-descrip{
   font-size: 24px;
 }
+
+.btn-ten, .btn-fifteen, .btn-twenty, .btn-twentyfive{
+  width: 50%;
+  font-size:2.5rem;
+}
+
+
 @media (max-width:992px){
   #rate-btn button{
     width: 50%;
@@ -204,6 +227,13 @@ img{
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+.btn-roundup{
+  width: 50%;
+  font-size:2.5rem;
+  margin-top:2rem;
+}
+
 @media (max-width:992px){
   .btn-roundup{
     margin-top: 2rem;
